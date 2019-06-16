@@ -1,5 +1,0 @@
-config.php
-vendor/
-logs/*.log
-app/views/cache
-base-directory-tree
