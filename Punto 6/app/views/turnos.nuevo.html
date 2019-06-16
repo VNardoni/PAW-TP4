@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Turno{% endblock %}
+
+
+{% block head %}
+    {{ parent() }}
+    <meta name="keywords" content="PAW,2019,Templates,PHP">
+
+{% endblock %}
+{% block nav %}
+    {{ include('partials/nav.html') }}
+{% endblock %}
+{% block main %}
+<br>
+<h2 style="text-align: center" >Formulario</h2>
+
+<form action="/turnos/registrarTurno" method="POST" enctype="multipart/form-data" class="formulario" >
+	<fieldset>
+		<legend>Formulario</legend>
+		<label for="nombre"> Nombre: </label>
+		<input type="text" name="nombre" id="nombre" required="true">
+		<br>
+		<br>
+		<label for="email">Email: </label>
+		<input type="email" name="email" id="email" required="true">
+		<br>
+		<br>
+		<label for="telefono">Telefono: </label>
+		<input type="number" name="telefono" id="telefono" min="1" required="true">
+		<br>
+		<br>
+		<label for="edad">Edad: </label>
+		<input type="number" name="edad" id="edad" min="0">
+		<br>
+		<br>
+		<label for="talla_calzado">Talla de calzado: </label>
+		<input type="number" name="talla_calzado" id="talla_calzado" min="20" max="45">
+		<br>
+		<br>
+		<label for="altura">Altura: </label>
+		<input type="range" name="altura"  id="altura" min="0" max="3.00" step="0.01">
+		<br>
+		<br>
+		<label for="fecha_de_nacimiento">Fecha de nacimiento: </label>
+		<input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento" max="{{ today }}" required="true">
+		<br>
+		<br>
+		<label for="color_de_pelo">Color de pelo: </label>
+		<select name="color_de_pelo" id="color_de_pelo">
+		    <option>Rubio</option>
+		    <option>Morocho</option>
+		    <option>Colorado</option>
+		    <option>Castaño</option>
+		    <option>Sin pelo</option>
+		</select>
+		<br>
+		<br>
+		<label for="fecha_del_turno">Fecha del turno: </label>
+		<input type="date" name="fecha_del_turno" id="fecha_del_turno" min="{{ today }}" required="true">
+		<label for="horario_del_turno">Horario del turno: </label>
+		<input type="time" name="horario_del_turno" id="horario_del_turno" min="08:00" max="17:00" step="900">
+		<br>
+		<br>
+		<label for="imagen_diagnostico">Cargar diagnostico</label>
+		<input type="file" name="imagen_diagnostico" id="imagen_diagnostico" multiple='multiple' accept="image/gif , image/jpeg"/>
+		<br>
+		<br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">
+	</fieldset>
+</form>
+{% endblock %}

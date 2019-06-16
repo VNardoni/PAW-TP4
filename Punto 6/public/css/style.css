@@ -1,0 +1,128 @@
+body {
+  background: white;
+}
+
+header main {
+  max-width: 1024px;
+  margin: auto;
+  background: skyblue;
+  padding: 10px;
+}
+
+section .datos {
+  border-radius: 25px;
+  background-color: #369681;
+  padding: 15px;
+}
+
+input {
+    border: 1px dotted #999;
+    border-radius: 0;
+
+    
+    -webkit-appearance: none;
+    
+}
+
+label {
+    display:  grid;
+    width: 145px;   
+}
+
+.formulario {
+    
+  border-radius: 25px;
+  background-color: #369681;
+  padding: 15px;
+}
+
+button input select {
+    font-family: monospace;
+    font-size: 100%;
+}
+
+button {
+    border-radius: 5px;
+    width: 153px;
+}
+
+input select{
+        
+    width : 160px;
+    margin: 0;
+
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: "Tahoma"; 
+}
+
+/*tabla*/
+ 
+  table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color:#246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+
+/* Nav styles */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #246355;
+}

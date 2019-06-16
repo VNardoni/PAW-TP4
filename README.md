@@ -1,4 +1,12 @@
-# Proyecto MVC
+﻿# Proyecto MVC
+
+# A tener en cuenta
+-En el ejercicio 2 fue creado un objeto con fines teoricos
+-Para resolver el trabajo práctico se inslato el programa WAMP3.1.7_x64.
+-Se utilizo PHP 7.2.18.
+-Para ejecutar los proyectos se utilizo el comando php -S ip:puerto
+-La base utilizada se llama mytodo cuyas tablas son :
+id,nombre,edad,telefono,email,altura,fecha_de_nacimiento,color_de_pelo,fecha_del_turno,horario_del_turno,imagen_diagnostico
 
 Un proyecto derivado del tutorial introductorio de Laracast y con algunos
 agregados para ser utilizado como material de PAW - UNLu.
