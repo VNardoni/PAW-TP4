@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Resumen Turno{% endblock %}
+
+
+{% block head %}
+    {{ parent() }}
+    <meta name="keywords" content="PAW,2018,Templates,PHP">
+{% endblock %}
+{% block nav %}
+    {{ include('partials/nav.html') }}
+{% endblock %}
+{% block main %}
+<br>
+<h2 style="text-align: center">Resumen</h2>
+<dl style="margin-left: 20%" >
+	<dt><strong>Nombre:</strong></dt>
+	<dd>{{ turno.nombre_del_paciente }}</dd>
+
+	<dt><strong>Email:</strong></dt>
+	<dd>{{ turno.email }}</dd>
+
+	<dt><strong>Telefono:</strong></dt>
+	<dd>{{ turno.telefono }}</dd>
+
+	<dt><strong>Edad:</strong></dt>
+	<dd>{{ turno.edad }}</dd>
+
+	<dt><strong>Talla de calzado:</strong></dt>
+	<dd>{{ turno.talla_de_calzado }}</dd>
+
+	<dt><strong>Altura:</strong></dt>
+	<dd>{{ turno.altura }}</dd>
+
+	<dt><strong>Fecha de nacimiento:</strong></dt>
+	<dd>{{ turno.fecha_de_nacimiento }}</dd>
+
+	<dt><strong>Color de pelo:</strong></dt>
+	<dd>{{ turno.color_de_pelo }}</dd>
+
+	<dt><strong>Fecha y hora del turno:</strong></dt>
+	<dd>{{ turno.fecha_del_turno }} - {{turno.horario_del_turno }}</dd>
+
+	<dt><strong>Imagen diagnostico: </strong></dt>
+	<dd><img src="{{ pathImage }}" alt="Imagen de diagnostico"/></dd>
+</dl>
+{% endblock %}
